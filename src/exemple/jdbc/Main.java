@@ -14,7 +14,7 @@ public class Main {
             cnx = DriverManager.getConnection("jdbc:mariadb://localhost:3306/mysql",
                     "root", "");
 
-            cnx.setAutoCommit(false);
+            //cnx.setAutoCommit(false);
 
             // Requete 1
             PreparedStatement ps = cnx.prepareStatement("select count(0) from mabase.commande");
@@ -36,13 +36,13 @@ public class Main {
                 System.out.println(date + " " + nom + " " + prenom);
             }
 
-            cnx.commit();
+            //cnx.commit();
 
         } catch (Exception exception) {
             System.err.println("Erreur survenue");
             exception.printStackTrace();
 
-            cnx.rollback();
+            //cnx.rollback();
 
         } finally {
             if (null != cnx) {
