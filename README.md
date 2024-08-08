@@ -1,4 +1,4 @@
-# Projet Java
+# Projet JDBC Consolidation
 
 Objectif consolider mes connaissances et mes compétences sur JDBC (les transactions)
 
